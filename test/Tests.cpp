@@ -1,4 +1,4 @@
-#include <test/core/Tests.hpp>
+#include <test/Tests.hpp>
 
 #include <iostream>
 

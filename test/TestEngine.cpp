@@ -1,9 +1,9 @@
-#include <test/core/TestEngine.hpp>
+#include <test/TestEngine.hpp>
 
 #include <mutex>
 #include <stdexcept>
 
-#include <test/core/utils/Config.hpp>
+#include <test/utils/Config.hpp>
 
 
 #if TEST_PLATFORM_POSIX

@@ -4,7 +4,7 @@
 
 #include <string>
 
-#include <test/core/TestContext.hpp>
+#include <test/TestContext.hpp>
 
 
 namespace test

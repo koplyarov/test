@@ -5,7 +5,7 @@
 #include <memory>
 #include <string>
 
-#include <test/core/Location.hpp>
+#include <test/Location.hpp>
 
 
 namespace test

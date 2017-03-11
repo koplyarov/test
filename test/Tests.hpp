@@ -5,10 +5,10 @@
 #include <map>
 #include <stdexcept>
 
-#include <test/core/ScopedTest.hpp>
-#include <test/core/utils/Comparers.hpp>
-#include <test/core/utils/ToString.hpp>
-#include <test/core/utils/TypeInfo.hpp>
+#include <test/ScopedTest.hpp>
+#include <test/utils/Comparers.hpp>
+#include <test/utils/ToString.hpp>
+#include <test/utils/TypeInfo.hpp>
 
 
 #define TEST_REPORT_SUCCESS(Message_) \

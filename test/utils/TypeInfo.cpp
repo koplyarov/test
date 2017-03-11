@@ -1,4 +1,4 @@
-#include <test/core/utils/TypeInfo.hpp>
+#include <test/utils/TypeInfo.hpp>
 
 #include <memory>
 

@@ -5,8 +5,8 @@
 #include <mutex>
 #include <string>
 
-#include <test/core/Location.hpp>
-#include <test/core/TestEngine.hpp>
+#include <test/Location.hpp>
+#include <test/TestEngine.hpp>
 
 
 namespace test

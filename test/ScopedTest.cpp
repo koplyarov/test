@@ -1,4 +1,4 @@
-#include <test/core/ScopedTest.hpp>
+#include <test/ScopedTest.hpp>
 
 
 namespace test
