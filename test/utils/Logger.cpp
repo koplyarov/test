@@ -18,7 +18,7 @@ namespace test
 	{ }
 
 	NamedLogger::LoggerWriter::LoggerWriter(LoggerWriter&& other)
-		: _logLevel(other._logLevel), _moved(false)
+		: _loggerLogLevel(other._loggerLogLevel), _logLevel(other._logLevel), _moved(false)
 	{
 		_stream << other._stream.str();
 		other._moved = true;
