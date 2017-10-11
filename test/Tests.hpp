@@ -56,8 +56,8 @@
 
 #define TEST_EQUALS(Val_, ...) \
 		TEST_DOES_NOT_THROW_INTERNAL("TEST_EQUALS(" #Val_ ", " #__VA_ARGS__ ")", { \
-				auto&& l = (Val_); \
-				auto&& r = (__VA_ARGS__); \
+				auto l = (Val_); \
+				auto r = (__VA_ARGS__); \
 				if (!::test::Equals(l, r)) \
 					TEST_REPORT_ERROR("'" #Val_ " == " #__VA_ARGS__ "': " + ::test::ToString(l) + " != " + ::test::ToString(r)); \
 				else \
@@ -66,8 +66,8 @@
 
 #define TEST_RELATION(Rel_, Val_, ...) \
 		TEST_DOES_NOT_THROW_INTERNAL("TEST_EQUALS(" #Val_ ", " #__VA_ARGS__ ")", { \
-				auto&& l = (Val_); \
-				auto&& r = (__VA_ARGS__); \
+				auto l = (Val_); \
+				auto r = (__VA_ARGS__); \
 				if (!((l) Rel_ (r))) \
 					TEST_REPORT_ERROR("'" #Val_ " " #Rel_ " " #__VA_ARGS__ "': " + ::test::ToString(l) + " and " + ::test::ToString(r)); \
 				else \
