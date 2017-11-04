@@ -2,6 +2,7 @@
 #define TEST_CORE_TESTS_HPP
 
 
+#include <functional>
 #include <map>
 #include <stdexcept>
 
