@@ -9,18 +9,18 @@
 namespace test
 {
 
-	class TypeInfo
-	{
-	private:
-		const std::type_info*		_ti;
+    class TypeInfo
+    {
+    private:
+        const std::type_info*       _ti;
 
-	public:
-		TypeInfo(const std::type_info& ti)
-			: _ti(&ti)
-		{ }
+    public:
+        TypeInfo(const std::type_info& ti)
+            : _ti(&ti)
+        { }
 
-		std::string ToString() const;
-	};
+        std::string ToString() const;
+    };
 
 }
 

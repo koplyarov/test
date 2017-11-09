@@ -12,21 +12,21 @@
 namespace test
 {
 
-	class TestContext
-	{
-	private:
-		TestEngine*		_engine;
-		std::string		_testName;
-		Location		_location;
-		bool			_failed;
+    class TestContext
+    {
+    private:
+        TestEngine*     _engine;
+        std::string     _testName;
+        Location        _location;
+        bool            _failed;
 
-	public:
-		TestContext(TestEngine* engine, std::string testName, const Location& location);
-		~TestContext();
+    public:
+        TestContext(TestEngine* engine, std::string testName, const Location& location);
+        ~TestContext();
 
-		void AssertionFailed(const Location& location, const std::string& message);
-		void ReportWarning(const Location& location, const std::string& message);
-	};
+        void AssertionFailed(const Location& location, const std::string& message);
+        void ReportWarning(const Location& location, const std::string& message);
+    };
 
 }
 

@@ -10,20 +10,20 @@
 namespace test
 {
 
-	class ScopedTest
-	{
-	private:
-		thread_local static TestContext*	s_currentContext;
+    class ScopedTest
+    {
+    private:
+        thread_local static TestContext*    s_currentContext;
 
-		TestContext&						_context;
-		TestContext*						_prevContext;
+        TestContext&                        _context;
+        TestContext*                        _prevContext;
 
-	public:
-		ScopedTest(TestContext& ctx, std::string name);
-		~ScopedTest();
+    public:
+        ScopedTest(TestContext& ctx, std::string name);
+        ~ScopedTest();
 
-		static TestContext& GetCurrentContext();
-	};
+        static TestContext& GetCurrentContext();
+    };
 
 }
 
